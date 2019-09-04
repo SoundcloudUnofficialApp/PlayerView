@@ -1,41 +1,45 @@
-# InteractivePlayerView
+# PlayerView
 
-Custom iOS music player view
+
+[![Swift5 compatible][Swift5Badge]][Swift5Link]
+[![SPM compatible][SPMBadge]][SPMLink]
+
+[Swift5Badge]: https://img.shields.io/badge/swift-5-orange.svg?style=flat
+[Swift5Link]: https://developer.apple.com/swift/
+
+[SPMBadge]: https://img.shields.io/badge/SPM-compatible-brightgreen.svg
+[SPMLink]: https://github.com/apple/swift-package-manager
+
+
+iOS music player view
 
 # Screen
 
-<img src="https://github.com/AhmettKeskin/InteractivePlayerView/blob/master/InteractivePlayerView/Screen.png"/>
+<img src="https://github.com/SoundcloudUnofficialApp/PlayerView/blob/master/PlayerView/Example/PlayerViewExample/Screen.png"/>
 
 ### About
-InteractivePlayerView is an IBDesignableView (Custom View) which has its own progress,cover image and action buttons.
+PlayerView is an IBDesignableView (Custom View) which has its own progress,cover image and action buttons.
 
 
 ## Installation
-  [Download](https://github.com/AhmettKeskin/InteractivePlayerView/archive/master.zip) the project and copy the InteractivePlayerView folder into your project and then simply you can use it in any file
+  [Download](https://github.com/AhmettKeskin/PlayerView/archive/master.zip) the project and copy the PlayerView folder into your project and then simply you can use it in any file
 
 ## Requirements
 
-- iOS 9.0+
-- Xcode 9.0+
-- Swift 4.0+
+- iOS 12.0+
+- Xcode 10.0+
+- Swift 5.0+
 
-#### Cocoapods
 
-```swift
-platform :ios, '9.0'
-use_frameworks!
-
-pod 'InteractivePlayerView', '3.0'
-```
 ## Usage
 - Add your view in storyboard
 - Arrange your view's size square (It looks better this way)
-- Set your view's class InteractivePlayerView
+- Set your view's class PlayerView
 - Wait until it built in storyboard and set variables
 - Then create your property of view and set it's delegate to self to use it's delegation methods and good to go !
 
 ``` swift
-  @IBOutlet var ipv: InteractivePlayerView!
+  @IBOutlet var ipv: PlayerView!
   
   // set delegation
   self.ipv!.delegate = self
@@ -50,7 +54,7 @@ pod 'InteractivePlayerView', '3.0'
   // restart player with duration
   self.ipv.restartWithProgress(duration: 50)
 
-  /* InteractivePlayerViewDelegate METHODS */
+  /* PlayerViewDelegate METHODS */
     func actionOneButtonTapped(sender: UIButton, isSelected: Bool) {
         println("ActionOneButton tapped")
     }

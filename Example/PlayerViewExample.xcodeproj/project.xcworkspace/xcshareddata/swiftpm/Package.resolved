@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PlayerView",
+        "repositoryURL": "https://github.com/SoundcloudUnofficialApp/PlayerView",
+        "state": {
+          "branch": null,
+          "revision": "162ae0c23c5d2c9113d549871270f6d74dc7ef7c",
+          "version": "3.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
